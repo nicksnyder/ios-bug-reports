@@ -11,6 +11,7 @@ import UIKit
 class Label : UILabel {
   override func layoutSubviews() {
     super.layoutSubviews()
+    println("layoutSubviews")
     // Reset the preferredMaxLayoutWidth any time the bounds change (e.g. orientation change)
     // so the label will fill the available horizontal space.
     // This works fine in iOS 7.0.3 and 7.1 simulators
