@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
 
-        let windowFrameYOffset: CGFloat = 200
+        let windowFrameYOffset: CGFloat = 200 // If this is 0, everything works as expected.
         window.frame = CGRect(x: 0, y: windowFrameYOffset, width: UIScreen.mainScreen().bounds.width, height: 100)
         window.windowLevel = UIWindowLevelStatusBar
         window.backgroundColor = UIColor(red: 1.0, green: 0, blue: 0, alpha: 0.5)
